@@ -555,9 +555,10 @@ body {
   height: 100vh;
   width: 100%;
   --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .main {
@@ -574,24 +575,32 @@ body {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  font-size: 4.5rem;
-  line-height: 1;
-  font-weight: 700;
-  margin-top: calc(50vh - 72px/2);
+  margin-top: calc(50vh - 120px);
 }
 
 .char {
   text-shadow: rgb(19, 26, 38) 5px 5px;
+  display: inline;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
 }
 
-.char:hover {
+.char-up {
   display: inline-block;
   --tw-translate-y: -0.5rem;
-  --tw-translate-x: 0.25rem;
-  --tw-rotate: -12deg;
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  transition: all 100ms;
-  text-shadow: rgb(19, 26, 38) 8px 8px;
+  transition: ease-in 50ms;
+  text-shadow: rgb(19, 26, 38) 7px 7px;
+}
+
+.motto {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.title-text {
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 700;
 }

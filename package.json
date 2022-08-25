@@ -4,16 +4,21 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "browser-sync start --directory --server --files \"*.js, **/*.css, *.html\"",
+    "start": "browser-sync start --directory --server --files \"*.js, *.jsx, **/*.css, *.html\"",
     "build": "webpack --progress --watch",
     "style": "tailwindcss -i ./src/app.css -o ./dist/index.css --watch"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.18.6",
     "babel": "^6.23.0",
     "babel-loader": "^8.2.5",
-    "browser-sync": "^2.27.10"
+    "babel-preset-react-app": "3",
+    "browser-sync": "^2.27.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.13",
     "autoprefixer": "^10.4.8",
     "babel-polyfill": "^6.26.0",
     "postcss": "^8.4.16",

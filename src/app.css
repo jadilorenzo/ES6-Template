@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply w-full h-screen text-white bg-slate-800;
+}
+
+.main {
+    @apply m-auto w-full flex justify-center align-middle h-screen;
+}
+
+.title {
+    @apply block h-min text-7xl font-bold;
+    margin-top: calc(50vh - 72px/2);
+}
+
+.char {
+    text-shadow: rgb(19, 26, 38) 5px 5px;
+}
+
+.char:hover {
+    @apply -translate-y-2 translate-x-1 -rotate-12 inline-block scale-110;
+    transition: all 100ms;
+    text-shadow: rgb(19, 26, 38) 8px 8px;
+}
